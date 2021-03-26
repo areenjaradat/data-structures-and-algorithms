@@ -185,19 +185,20 @@ const sortPeopleBetter = (arr) => {
   // Solution code here...
 
   arr.sort((a, b) => {
-    if (a.firstName < b.firstName) {
-      return -1;
+    if (a.lastName < b.lastName) {
+      return -1;}
+    if (a.lastName > b.lastName) {
+      return 1;}
+    if(a.lastName === b.lastName){
+      if (a.firstName < b.firstName) {
+        return -1;}
+      if (a.firstName > b.firstName) {
+        return 1;}
     }
-    else if (a.firstName > b.firstName) {
-      return 1;
-    }else if(a.firstName === b.firstName){
-      if (a.lastName < b.lastName) {
-        return -1;
-      }
-      else if (a.lastName > b.lastName) {
-        return 1;
-      }
+    if(a.lastName=== b.lastName && a.firstName===b.firstName){
+      return a.age -b.age ;
     }
+    return 0;
   });
   return arr;
 
@@ -354,7 +355,7 @@ describe('Testing challenge 10', () => {
   });
 });
 
-xdescribe('Testing challenge 11', () => {
+describe('Testing challenge 11', () => {
   test('It should sort people with more strict ordering', () => {
     const family = [
       new Person('Casey', 'Codefellows', 55),
