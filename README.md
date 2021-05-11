@@ -14,6 +14,8 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ## Table of content
 
-| Read # | Link |
-|------|------|
+| Array Reverse | [implementations](/javascript/arrayReverse/README.md) |
+| Array sheft | [implementations](/javascript/arrayShift/README.md) |
+| arrayBinarySearch | [implementations](/javascript/arrayBinarySearch/README.md) |
 | linkedList | [implementations](/javascript/linkedList/README.md) |
+
