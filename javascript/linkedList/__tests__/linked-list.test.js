@@ -39,4 +39,35 @@ describe('test Singly Linked Lists',()=>{
     expect(linkedList.head.next.next.next.value).toEqual(13);
 
   });
+
+  it('append() multible', ()=> {
+
+    const value =  14;
+    linkedList.append(value);
+    linkedList.append(15);
+    expect(linkedList.head.next.next.next.next.value).toEqual(14);
+    expect(linkedList.head.next.next.next.next.next.value).toEqual(15);
+
+  });
+  it('insert a node before the first node of a linked list', ()=> {
+    linkedList.insertBefore(12, 20);
+    expect(linkedList.head.value).toEqual(20);
+    expect(linkedList.toString()).toEqual('{20}->{12}->{11}->{10}->{13}->{14}->NULL');
+
+  });
+  it('insert a node before a node located i the middle of a linked list', ()=> {
+    linkedList.insertBefore(11, 9);
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{10}->{13}->{14}->NULL');
+
+  });
+  it('insert after a node in the middle of the linked list', ()=> {
+    linkedList.insertAfter(11, 7);
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->NULL');
+
+  });
+  it('insert a node after the last node of the linked list', ()=> {
+    linkedList.insertAfter(14, 15);
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->{15}->NULL');
+
+  });
 });
