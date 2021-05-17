@@ -5,18 +5,21 @@ const Node=require('./node');
 class LinkedList{
   constructor(){
     this.head=null;
+    this.size=0;
   }
 
   append(value){
     let node=new Node(value);
     if(!this.head){
       this.head=node;
+      this.size++;
     }else{
       let currentNode=this.head;
       while(currentNode.next){
         currentNode=currentNode.next;
       }
       currentNode.next=node;
+      this.size++;
     }
     return this;
   }
@@ -25,9 +28,11 @@ class LinkedList{
     let node=new Node(value);
     if(!this.head){
       this.head=node;
+      this.size++;
     }else{
       node.next=this.head;
       this.head=node;
+      this.size++;
     }
   }
   includes(value){
@@ -67,6 +72,7 @@ class LinkedList{
       if(currentNode.value===value){
         node.next=currentNode;
         this.head=node;
+        this.size++;
         return 'success';
       }
       while(currentNode.next){
@@ -74,6 +80,7 @@ class LinkedList{
           let tempNode=currentNode.next;
           currentNode.next=node;
           node.next=tempNode;
+          this.size++;
           return 'success';
         }
         currentNode=currentNode.next;
@@ -91,11 +98,25 @@ class LinkedList{
         if(currentNode.value===value){
           let tempNode=currentNode.next;
           currentNode.next=node;
+          this.size++;
           node.next=tempNode;
           return 'success';
         }
         currentNode=currentNode.next;
       }
+    }
+    return 'Exception';
+  }
+
+  kthFromEnd(k){
+    let currentNode=this.head;
+    let count=this.size-1;
+    while(currentNode){
+      if(k===count){
+        return currentNode.value;
+      }
+      count--;
+      currentNode=currentNode.next;
     }
     return 'Exception';
   }
