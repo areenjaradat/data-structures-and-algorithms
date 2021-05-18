@@ -29,7 +29,7 @@ describe('test Singly Linked Lists',()=>{
   });
   it('Can properly return a collection of all the values that exist in the linked list',()=>{
     let newLinkedList=new LinkedList();
-    expect(linkedList.toString()).toEqual('{12}->{11}->NULL');
+    expect(linkedList.toString()).toEqual('{12}->{11}->{10}->NULL');
     expect(newLinkedList.toString()).toEqual('empty LinkedList');
   });
   it('append()', ()=> {
@@ -52,22 +52,22 @@ describe('test Singly Linked Lists',()=>{
   it('insert a node before the first node of a linked list', ()=> {
     linkedList.insertBefore(12, 20);
     expect(linkedList.head.value).toEqual(20);
-    expect(linkedList.toString()).toEqual('{20}->{12}->{11}->{10}->{13}->{14}->NULL');
+    expect(linkedList.toString()).toEqual('{20}->{12}->{11}->{10}->{13}->{14}->{15}->NULL');
 
   });
   it('insert a node before a node located i the middle of a linked list', ()=> {
     linkedList.insertBefore(11, 9);
-    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{10}->{13}->{14}->NULL');
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{10}->{13}->{14}->{15}->NULL');
 
   });
   it('insert after a node in the middle of the linked list', ()=> {
     linkedList.insertAfter(11, 7);
-    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->NULL');
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->{15}->NULL');
 
   });
   it('insert a node after the last node of the linked list', ()=> {
     linkedList.insertAfter(14, 15);
-    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->{15}->NULL');
+    expect(linkedList.toString()).toEqual('{20}->{12}->{9}->{11}->{7}->{10}->{13}->{14}->{15}->{15}->NULL');
 
   });
   it('should find kth value in a linked list', () => {

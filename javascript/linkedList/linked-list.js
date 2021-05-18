@@ -55,7 +55,7 @@ class LinkedList{
       linkedListToString='empty LinkedList';
     }else{
 
-      while(currentNode.next){
+      while(currentNode){
         linkedListToString +=`{${currentNode.value}}->`;
         currentNode=currentNode.next;
       }
