@@ -21,3 +21,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | linkedList | [implementations](/javascript/linkedList/README.md) |
 | ll-insertions | [implementations](/javascript/linkedList/README.md) |
 | ll-kth-from-end | [implementations](/javascript/linkedList/README.md) |
+| ll-zip | [implementations](/javascript/ll-zip/README.md) |
