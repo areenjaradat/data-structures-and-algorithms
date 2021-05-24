@@ -23,3 +23,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | ll-kth-from-end | [implementations](/javascript/linkedList/README.md) |
 | ll-zip | [implementations](/javascript/llZip/README.md) |
 | stacksAndQueues | [implementations](/javascript/stacksAndQueues/README.md) |
+| queueWithStacks | [implementations](/javascript/queueWithStacks/README.md) |
+| fifoAnimalShelter | [implementations](/javascript/fifoAnimalShelter/README.md) |
