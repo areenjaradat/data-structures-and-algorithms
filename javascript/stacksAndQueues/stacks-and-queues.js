@@ -19,7 +19,7 @@ class Stack {
     }else{
       let item=this.storage.shift();
       this.top=this.storage[0];
-      console.log(this.top);
+      //console.log(this.top);
       return item;
     }
   }
