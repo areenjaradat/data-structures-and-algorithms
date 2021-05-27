@@ -11,6 +11,7 @@ class Stack {
   push(val){
     this.storage.unshift(val);
     this.top=val;
+    return this.top;
   }
 
   pop(){

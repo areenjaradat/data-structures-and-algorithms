@@ -9,9 +9,7 @@ describe('test PseudoQueue',()=>{
     queue.enqueue(15);
     queue.enqueue(10);
     let val=5;
-    queue.enqueue(val);
-    expect(queue.stack1.top).toEqual(5);
-    expect(queue.stack1.storage[0]).toEqual(5);
+    expect(queue.enqueue(val)).toEqual(5);
   });
 
   it('dequeue ',()=>{

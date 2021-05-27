@@ -9,7 +9,7 @@ class PseudoQueue {
   }
 
   enqueue(value){
-    this.stack1.push(value);
+    return this.stack1.push(value);
   }
 
   dequeue(){
