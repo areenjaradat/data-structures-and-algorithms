@@ -68,6 +68,10 @@ describe('test tree',()=>{
     let expected = [8, 9, 7, 6, 2, 4, 5, 3, 1];
     expect(tree.postOrder()).toEqual(expected);
   });
+  it('7. Can successfully return a maximum value',()=>{
+
+    expect(tree.findMaximumValue()).toEqual(9);
+  });
 
   it('1. Can successfully instantiate an empty BinarySearchTree',()=>{
     let newBinarySearchTree=new BinarySearchTree();
