@@ -72,7 +72,13 @@ describe('test tree',()=>{
 
     expect(tree.findMaximumValue()).toEqual(9);
   });
-
+  it('8. Can successfully return a array in bradth first search',()=>{
+    // console.log(tree);
+    // console.log(tree.breadthFirst());
+    const tree1=new BinaryTree();
+    expect(tree.breadthFirst()).toEqual( [1, 2, 3, 6, 4,5, 7, 8, 9]);
+    expect(tree1.breadthFirst()).toEqual('Tree is empty');
+  });
   it('1. Can successfully instantiate an empty BinarySearchTree',()=>{
     let newBinarySearchTree=new BinarySearchTree();
     expect(newBinarySearchTree.root).toBeNull();
