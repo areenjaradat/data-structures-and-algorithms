@@ -61,6 +61,30 @@ class BinaryTree {
 
   }
 
+  breadthFirst(){
+    const results = [];
+    const treeNodes = [];
+    if (this.root === null) {
+      return 'Tree is empty';
+    } else {
+      treeNodes.push(this.root);
+      //console.log(rootNodes);
+      while (treeNodes.length) {
+        const node = treeNodes.shift();
+        //console.log('rootNodes',rootNodes);
+        //console.log('node',node);
+        if (node.left) {
+          treeNodes.push(node.left);
+        }
+        if (node.right) {
+          treeNodes.push(node.right);
+        }
+        results.push(node.value);
+      }
+    }
+    return results;
+  }
+
 }
 class BinarySearchTree{
   constructor(root=null){

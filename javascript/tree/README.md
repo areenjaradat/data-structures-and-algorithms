@@ -15,6 +15,8 @@ A tree is a collection of entities called nodes. Nodes are connected by edges. E
   * Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
   * Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
 ## Approach & Efficiency
 
 `BinaryTree`
@@ -22,6 +24,7 @@ preOrder: space O(h)/time O(n)
 inOrder: space O(h)/time O(n)
 postOrder: space O(h)/time O(n)
 findMaximumValue() :space O(n)/time O(n)
+breadthFirst() :space O(n)/time O(n)
 
 `BinarySearchTree`
 
@@ -31,3 +34,5 @@ contain(value): space O(1)/time O(n)
 ![tree](../assest/challenge15.png)
 
 ![findMaximumValue](../assest/challenge16.png)
+
+![breadthFirst](../assest/challenge17.png)
