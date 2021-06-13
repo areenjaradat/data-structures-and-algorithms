@@ -28,3 +28,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | multiBracketValidation | [implementations](/javascript/multiBracketValidation/README.md) |
 | tree | [implementations](/javascript/tree/README.md) |
 | fizzBuzzTree | [implementations](/javascript/fizzBuzzTree/README.md) |
+| insertionSort | [implementations](/javascript/insertionSort/README.md) |
