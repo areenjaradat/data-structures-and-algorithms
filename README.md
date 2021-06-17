@@ -30,3 +30,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | fizzBuzzTree | [implementations](/javascript/fizzBuzzTree/README.md) |
 | insertionSort | [implementations](/javascript/insertionSort/README.md) |
 | quicksort | [implementations](/javascript/quicksort/README.md) |
+| hashtable | [implementations](/javascript/hashtable/README.md) |
