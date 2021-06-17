@@ -29,5 +29,6 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | tree | [implementations](/javascript/tree/README.md) |
 | fizzBuzzTree | [implementations](/javascript/fizzBuzzTree/README.md) |
 | insertionSort | [implementations](/javascript/insertionSort/README.md) |
+| mergesort | [implementations](/javascript/mergesort/README.md) |
 | quicksort | [implementations](/javascript/quicksort/README.md) |
 | hashtable | [implementations](/javascript/hashtable/README.md) |
