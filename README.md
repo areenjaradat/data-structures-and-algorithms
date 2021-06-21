@@ -33,3 +33,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 | quicksort | [implementations](/javascript/quicksort/README.md) |
 | hashtable | [implementations](/javascript/hashtable/README.md) |
 | repeatedWord | [implementations](/javascript/repeatedWord/README.md) |
+| treeIntersection | [implementations](/javascript/treeIntersection/README.md) |
