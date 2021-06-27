@@ -67,7 +67,7 @@ class Queue {
     }
   }
   isEmpty(){
-    if(!this.top){
+    if(!this.front){
       return true;
     }
     return false;
